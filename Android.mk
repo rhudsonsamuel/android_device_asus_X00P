@@ -24,4 +24,17 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),X00P)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+include $(CLEAR_VARS)
+
+SNAP_LIBS := libarcsoft_beautyshot.so libarcsoft_hdr.so libarcsoft_night_shot.so libarcsoft_panorama_burstcapture.so libjni_hq_beautyshot.so libjni_hq_hdr_shot.so libjni_hq_night_shot.so libjni_hq_panorama.so libjni_imageutil.so libjni_snapcammosaic.so libjni_snapcamtinyplanet.so libmpbase.so libtensorflow_inference.so
+SNAP_SYMLINKS := $(addprefix $(TARGET_OUT_APPS_PRIVILEGED)/SnapCam/lib/arm64/,$(notdir $(SNAP_LIBS)))
+$(SNAP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "SNAP lib link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /system/lib64/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(SNAP_SYMLINKS)
+
 endif
