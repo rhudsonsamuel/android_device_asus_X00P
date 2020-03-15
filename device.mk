@@ -20,6 +20,10 @@ DEVICE_PATH := device/asus/X00P
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/asus/X00P/X00P-vendor.mk)
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
 # Properties
 -include $(DEVICE_PATH)/prop.mk
 
