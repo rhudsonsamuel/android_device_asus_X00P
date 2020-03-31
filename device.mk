@@ -24,6 +24,11 @@ $(call inherit-product-if-exists, vendor/asus/X00P/X00P-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Biometrics
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.biometrics.fingerprint@2.1-service
+
 # Properties
 -include $(DEVICE_PATH)/prop.mk
 

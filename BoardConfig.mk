@@ -20,6 +20,9 @@
 
 DEVICE_PATH := device/asus/X00P
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := X00P_defconfig
 
