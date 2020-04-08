@@ -22,12 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Inherit from X00P device
 $(call inherit-product, device/asus/X00P/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Reloaded-CAF stuff.
+$(call inherit-product, vendor/reloaded/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X00P
-PRODUCT_NAME := lineage_X00P
+PRODUCT_NAME := reloaded_X00P
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X00PD
 PRODUCT_MANUFACTURER := asus

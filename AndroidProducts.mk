@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_X00P.mk
+    $(LOCAL_DIR)/reloaded_X00P.mk
+
+COMMON_LUNCH_CHOICES := \
+    reloaded_X00P-user \
+    reloaded_X00P-eng \
+    reloaded_X00P-userdebug
