@@ -24,6 +24,11 @@ $(call inherit-product-if-exists, vendor/asus/X00P/X00P-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Audio configuration
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    $(DEVICE_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
+
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1 \
