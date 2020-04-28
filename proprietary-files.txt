@@ -1,4 +1,4 @@
-# Audio ACDB
+# Audio ACDB - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_General_cal.acdb
 vendor/etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Global_cal.acdb
@@ -85,13 +85,16 @@ vendor/etc/acdbdata/QRD/sdm439-sku1-snd-card/SDM439_SKU1_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/sdm439-sku1-snd-card/SDM439_SKU1_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/sdm439-sku1-snd-card/SDM439_SKU1_workspaceFile.qwsp
 
-# Camera
+# Camera - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
+lib64/libseemore.so
 vendor/lib/hw/camera.msm8937.so
-vendor/lib/libbase64.so
 vendor/lib/libcamera_selfie.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
+vendor/lib/libchromaflash.so
+vendor/lib/libdualcameraddm.so
 vendor/lib/libflash_pmic.so
+vendor/lib/libgui_vendor.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -102,24 +105,26 @@ vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmpbase.so
+vendor/lib/liboptizoom.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
+vendor/lib/libseemore.so
 vendor/lib/libswvdec.so
-vendor/lib/libts_detected_face_hal.so
-vendor/lib/libts_face_beautify_hal.so
+vendor/lib/libubifocus.so
 vendor/lib/libvideoutils.so
-vendor/lib64/libbase64.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
+vendor/lib64/libdualcameraddm.so
+vendor/lib64/liboptizoom.so
+vendor/lib64/libseemore.so
 vendor/lib64/libswvdec.so
-vendor/lib64/libts_detected_face_hal.so
-vendor/lib64/libts_face_beautify_hal.so
+vendor/lib64/libubifocus.so
 vendor/lib64/libvideoutils.so
 
-# Camera actuators
+# Camera actuators - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ak7345.so
@@ -141,10 +146,8 @@ vendor/lib/libactuator_lc898217xc.so
 vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 
-# Camera-arcsoft
+# Camera-arcsoft - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_face_detection.so
-vendor/lib/libarcsoft_face_tracking.so
 vendor/lib/libarcsoft_hdr.so
 vendor/lib/libarcsoft_nighthawk.so
 vendor/lib/libarcsoft_night_shot.so
@@ -152,10 +155,10 @@ vendor/lib/libarcsoft_picselfie_algorithm.so
 vendor/lib/libarcsoft_piczoom.so
 vendor/lib/libarcsoft_videostab.so
 
-# Camera-bin
+# Camera-bin - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/bin/mm-qcamera-daemon
 
-# Camera chromatix
+# Camera chromatix - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib/libchromatix_ar1337_1080p_preview_3a.so
 vendor/lib/libchromatix_ar1337_1080p_video_3a.so
 vendor/lib/libchromatix_ar1337_common.so
@@ -1402,7 +1405,7 @@ vendor/lib/libchromatix_s5k5e8_snapshot.so
 vendor/lib/libchromatix_s5k5e8_zsl_preview.so
 vendor/lib/libchromatix_s5k5e8_zsl_video.so
 
-# Camera-configs
+# Camera-configs - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/etc/camera/ar1337_chromatix.xml
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/csidtg_camera.xml
@@ -1457,7 +1460,7 @@ vendor/etc/camera/s5k3p8sp_chromatix.xml
 vendor/etc/camera/s5k4h7_chromatix.xml
 vendor/etc/camera/s5k5e8_chromatix.xml
 
-# Camera-firmware
+# Camera-firmware - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_12_0.fw
 vendor/firmware/cpp_firmware_v1_1_1.fw
@@ -1470,10 +1473,10 @@ vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
-# Camera-ois
+# Camera-ois - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib/libois_lc898122.so
 
-# Camera-sensors
+# Camera-sensors - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -1496,6 +1499,7 @@ vendor/lib/libmmcamera_arc_beautyshot.so
 vendor/lib/libmmcamera_arc_nighthawk.so
 vendor/lib/libmmcamera_arc_videostab.so
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
+vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dcrf_lib.so
@@ -1568,9 +1572,11 @@ vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 vendor/lib/libmmcamera_le2464c_eeprom.so
 vendor/lib/libmmcamera_le2464c_master_eeprom.so
+vendor/lib/libmmcamera_llvd.so
 vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so
 vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so
 vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so
+vendor/lib/libmmcamera_optizoom_lib.so
 vendor/lib/libmmcamera_ov13850.so
 vendor/lib/libmmcamera_ov13850_q13v06k.so
 vendor/lib/libmmcamera_ov13855_gt24c64_eeprom.so
@@ -1617,6 +1623,7 @@ vendor/lib/libmmcamera_s5k5e8_holitech_eeprom.so
 vendor/lib/libmmcamera_sony_imx214_eeprom.so
 vendor/lib/libmmcamera_sony_imx298_eeprom.so
 vendor/lib/libmmcamera_sony_imx378_eeprom.so
+vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sunny_8865_eeprom.so
 vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so
 vendor/lib/libmmcamera_sunny_gt24c64_imx298_eeprom.so
@@ -1627,10 +1634,12 @@ vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_truly_cma481_eeprom.so
 vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
+vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_q3a_core.so
@@ -1639,13 +1648,11 @@ vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# Fingerprint
+# Fingerprint - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/etc/sw_config.xml
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib/android.hardware.biometrics.fingerprint@2.1.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/android.vendor.swfingerprint@1.0.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fpsensor_fingerprint.default.so
@@ -1655,7 +1662,7 @@ vendor/lib64/hw/mafp_factory.default.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libfprint-x64.so
 
-# FingerPrints Firmware
+# FingerPrints Firmware - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/etc/firmware/fngap64_8937.b00
 vendor/etc/firmware/fngap64_8937.b01
 vendor/etc/firmware/fngap64_8937.b02
