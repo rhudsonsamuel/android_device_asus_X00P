@@ -1688,3 +1688,18 @@ vendor/etc/firmware/sw_fp_8937.b04
 vendor/etc/firmware/sw_fp_8937.b05
 vendor/etc/firmware/sw_fp_8937.b06
 vendor/etc/firmware/sw_fp_8937.mdt
+
+# Snap libs - from stock - QKQ1.191002.002-17.00.2003.23-20200401
+lib64/libarcsoft_beautyshot.so
+lib64/libarcsoft_hdr.so
+lib64/libarcsoft_night_shot.so
+lib64/libarcsoft_panorama_burstcapture.so
+lib64/libjni_hq_beautyshot.so
+lib64/libjni_hq_hdr_shot.so
+lib64/libjni_hq_night_shot.so
+lib64/libjni_hq_panorama.so
+lib64/libjni_imageutil.so
+lib64/libjni_snapcammosaic.so
+lib64/libjni_snapcamtinyplanet.so
+lib64/libmpbase.so
+lib64/libtensorflow_inference.so
